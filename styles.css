@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-color: hsl(180, 52%, 96%);
+}
+.head{
+    position: relative;
+    height: 10vh;
+    background: url("./images/bg-header-desktop.svg"), repeat;
+    background-color: hsl(180, 29%, 50%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+}
+.job-item{
+    display: flex;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+    background: #fff;
+    margin: 1rem 0;
+}
+.job{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.logo{
+    width: 10%;
+    margin: 0.5rem;
+}
+.info{
+    display: flex;
+}
+.heading{
+    display: flex;
+}
+.name{
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+    margin-right: 0.4rem;
+}
+.new{
+    color: #fff;
+    font-weight: 700;
+    background: hsl(180, 29%, 50%);
+    padding: 0.4rem;
+    margin-top: -0.4rem;
+    border-radius: 1rem;
+    pointer-events: none;
+    margin-right: 0.4rem;
+}
+.featured{
+    color: #fff;
+    font-weight: 700;
+    background: #000;
+    padding: 0.4rem;
+    margin-top: -0.4rem;
+    border-radius: 1rem;
+    pointer-events: none;
+}
+.position{
+    font-weight: 700;
+    margin-top: 0.5rem;
+    color: #000;
+}
+.job-info{
+    display: flex;
+}
+.job-info li{
+    margin: 0.5rem 1rem 0 0rem;
+    color: hsl(180, 8%, 52%);
+}
+.job-info li span{
+    margin-right: 1rem;
+    color: hsl(180, 8%, 52%);
+}
+.job-info li:nth-child(4n+1){
+    list-style: none;
+}
+.skills{
+    align-self: center;
+}
+.skill{
+    margin-left: 1rem;
+    color: hsl(180, 29%, 50%);
+    background: hsl(180, 52%, 96%);
+    padding: 0.4rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.feat{
+    border-left: 5px solid hsl(180, 29%, 50%);
+}
+.filter{
+    width: 30%;
+    margin: 0 auto;
+}
+.filter-box{
+    display: none;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+}
+.filter-box ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    margin: 0.5rem;
+    background: hsl(180, 29%, 50%);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.filter-btn{
+    display: block;
+    margin: 0.5rem auto;
+    padding: 1rem 2.5rem;
+    border: none;
+    background: hsl(27, 67%, 47%);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+}
+.filter-btn:hover{
+    cursor: pointer;
+    background: hsl(28, 25%, 21%);
+    transition: all 0.3s ease-in;
+}
+.filter-btn:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+.item:hover{
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 3px #ccc);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.43);
+}
+.active{
+    background: rgba(0,0,0,0.43);
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .head{
+        height: 20vh;
+        background: url("./images/bg-header-mobile.svg"), repeat;
+        background-color: hsl(180, 29%, 50%);
+    }
+    .job-item{
+        width: 90%;
+        margin: 2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .job{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .logo{
+        margin-top: -2rem;
+        width: 50px;
+        height: 50px;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .job-info{
+        width: 100%;
+    }
+    .line{
+        width: 90%;
+        margin: 1rem 0;
+    }
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0.5rem 0;
+        align-self: flex-start;
+    }
+    .skill{
+        margin: 0.5rem;
+    }
+}
